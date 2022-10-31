@@ -1,0 +1,60 @@
+algorithm:
+  type: fedavg
+clients:
+  async_training: true
+  do_test: false
+  per_round: 20
+  simulation: false
+  total_clients: 200
+  type: simple
+data:
+  data_path: ./data
+  datasource: CIFAR10
+  partition_size: 1000
+  sampler: noniid
+results:
+  plot: elapsed_time&accuracy
+  results_dir: ./
+  types: accuracy, elapsed_time
+server:
+  address: 127.0.0.1
+  asynchronous:
+    seconds_per_step: 5
+    sirius:
+      client_selection: random
+      exploration_decaying_factor: 0.98
+      explore_factor: 0.9
+      min_explore_factor: 0.3
+      seed: 1
+      staleness_penalty_factor: 0.5
+      version: 2
+  disable_clients: true
+  ping_interval: 1
+  ping_timeout: 86400
+  port: 8000
+  response_latency_distribution:
+    args:
+      a: 1.2
+      max: 180
+      min: 16
+      seed: 1
+    name: zipf
+  seconds: 14400
+  test_interval_in_seconds: 30
+  type: fedavg
+trainer:
+  batch_size: 128
+  epochs: 1
+  learning_rate: 0.01
+  lr_gamma: 0.1
+  lr_milestone_steps: 80ep,120ep
+  lr_schedule: LambdaLR
+  max_concurrency: 4
+  model_name: resnet_18
+  momentum: 0.9
+  optimizer: SGD
+  parallelized: true
+  rounds: 20
+  target_accuracy: 0.65
+  type: basic
+  weight_decay: 0.0001

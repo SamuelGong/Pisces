@@ -1,0 +1,12 @@
+numpy
+python-socketio
+aiohttp
+requests
+boto3
+pyyaml
+datasets
+scipy
+transformers
+sklearn
+torch
+torchvision

@@ -1,0 +1,104 @@
+# The cluster plan
+server:
+  name: pisces-coordinator
+  type: c5.4xlarge
+  region: us-east-2
+clients:
+  - 1:
+      name: pisces-worker-1
+      type: c5.4xlarge
+      region: us-east-2
+  - 2:
+      name: pisces-worker-2
+      type: c5.4xlarge
+      region: us-east-2
+  - 3:
+      name: pisces-worker-3
+      type: c5.4xlarge
+      region: us-east-2
+  - 4:
+      name: pisces-worker-4
+      type: c5.4xlarge
+      region: us-east-2
+  - 5:
+      name: pisces-worker-5
+      type: c5.4xlarge
+      region: us-east-2
+  - 6:
+      name: pisces-worker-6
+      type: c5.4xlarge
+      region: us-east-2
+  - 7:
+      name: pisces-worker-7
+      type: c5.4xlarge
+      region: us-east-2
+  - 8:
+      name: pisces-worker-8
+      type: c5.4xlarge
+      region: us-east-2
+  - 9:
+      name: pisces-worker-9
+      type: c5.4xlarge
+      region: us-east-2
+  - 10:
+      name: pisces-worker-10
+      type: c5.4xlarge
+      region: us-east-2
+  - 11:
+      name: pisces-worker-11
+      type: c5.4xlarge
+      region: us-east-2
+  - 12:
+      name: pisces-worker-12
+      type: c5.4xlarge
+      region: us-east-2
+  - 13:
+      name: pisces-worker-13
+      type: c5.4xlarge
+      region: us-east-2
+  - 14:
+      name: pisces-worker-14
+      type: c5.4xlarge
+      region: us-east-2
+  - 15:
+      name: pisces-worker-15
+      type: c5.4xlarge
+      region: us-east-2
+  - 16:
+      name: pisces-worker-16
+      type: c5.4xlarge
+      region: us-east-2
+  - 17:
+      name: pisces-worker-17
+      type: c5.4xlarge
+      region: us-east-2
+  - 18:
+      name: pisces-worker-18
+      type: c5.4xlarge
+      region: us-east-2
+  - 19:
+      name: pisces-worker-19
+      type: c5.4xlarge
+      region: us-east-2
+  - 20:
+      name: pisces-worker-20
+      type: c5.4xlarge
+      region: us-east-2
+
+# For deploying a geo-distributed cluster atop different regions of AWS
+# instance need to be placed into those subnets where peer is enabled
+subnets:
+  eu-west-2: subnet-0f1c9e7846cef499a # London
+  ap-northeast-1: subnet-06fdd082de1107483 # Tokyo
+  us-east-2: subnet-0fa65a4dd0c081e8a # Ohio
+  us-west-1: subnet-03b808eba36a89bfc # California
+  ap-southeast-2: subnet-0daf535bca6786d49 # Sydney
+
+images:
+    # Ubuntu Server 18.04 LTS (HVM), SSD Volume Type, 64-bit x86
+    # Effective Date: Jun 20, 2021 (These may change over time)
+    eu-west-2: ami-09a56048b08f94cdf
+    ap-northeast-1: ami-0fe22bffdec36361c
+    us-east-2: ami-0b9064170e32bde34
+    us-west-1: ami-07b068f843ec78e72
+    ap-southeast-2: ami-0f39d06d145e9bb63

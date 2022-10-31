@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+"""
+Starting a client for Plato federated learning training.
+"""
+import os
+import asyncio
+
+from plato.clients import registry as client_registry
+
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+os.environ["MKL_THREADING_LAYER"] = "GNU"
+
+
+def main():
+    """Starting a client for Plato federated learning training. """
+    client = client_registry.get()
+    client.configure()
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(client.start_client())
+
+
+if __name__ == "__main__":
+    main()

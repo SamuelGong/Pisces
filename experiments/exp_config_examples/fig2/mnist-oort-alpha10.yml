@@ -1,0 +1,65 @@
+algorithm:
+  type: fedavg
+clients:
+  async_training: true
+  do_test: false
+  per_round: 5
+  simulation: false
+  total_clients: 20
+  type: simple
+data:
+  concentration_update: 0.05
+  data_path: ./data
+  datasource: MNIST
+  partition_size: 500
+  partition_size_update: 2.5
+  random_seed: 1
+  sampler: noniid
+results:
+  plot: round_time&accuracy
+  results_dir: ./
+  types: accuracy, training_time, round_time
+server:
+  address: 127.0.0.1
+  client_selection:
+    name: oort
+    parameters:
+      blacklist_max_len: 0.3
+      blacklist_rounds: -1
+      clip_bound: 0.9
+      cut_off_util: 0.05
+      exploration_alpha: 0.3
+      exploration_decay: 0.98
+      exploration_factor: 0.9
+      exploration_min: 0.3
+      pacer_delta: 5
+      pacer_step: 20
+      round_penalty: 1.0
+      round_threshold: 30
+      sample_window: 5.0
+  disable_clients: true
+  ping_interval: 1
+  port: 8000
+  response_latency_distribution:
+    args:
+      a: 1.2
+      max: 180
+      min: 5
+      seed: 1
+    name: zipf
+  seconds: 3600
+  test_interval_in_seconds: 20
+  type: fedavg
+trainer:
+  batch_size: 32
+  epochs: 5
+  learning_rate: 0.01
+  max_concurrency: 4
+  model_name: lenet5
+  momentum: 0.9
+  optimizer: SGD
+  parallelized: true
+  rounds: 26
+  target_accuracy: 0.95
+  type: basic
+  weight_decay: 0.0

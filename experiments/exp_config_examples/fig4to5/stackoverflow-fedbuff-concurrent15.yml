@@ -1,0 +1,51 @@
+algorithm:
+  type: fedavg
+clients:
+  async_training: true
+  do_test: false
+  per_round: 15
+  simulation: false
+  total_clients: 20
+  type: simple
+data:
+  concurrent_download: true
+  data_path: ./data
+  datasource: StackOverflow
+  random_seed: 1
+  sampler: all_inclusive
+results:
+  plot: elapsed_time&perplexity
+  results_dir: ./
+  types: perplexity, elapsed_time
+server:
+  address: 127.0.0.1
+  asynchronous:
+    fedbuff:
+      seed: 1
+      staleness_penalty_factor: 0.5
+      threshold_aggregation: 0.4
+    seconds_per_step: 5
+  disable_clients: true
+  ping_interval: 1
+  port: 8000
+  response_latency_distribution:
+    args:
+      a: 1.2
+      max: 180
+      min: 25
+      seed: 1
+    name: zipf
+  seconds: 1800
+  test_interval_in_seconds: 20
+  type: fedavg
+trainer:
+  batch_size: 20
+  epochs: 2
+  learning_rate: 8.0e-05
+  max_concurrency: 4
+  model_name: albert_base_v2
+  optimizer: AdamW
+  parallelized: true
+  rounds: 5
+  type: basic
+  weight_decay: 0.0
