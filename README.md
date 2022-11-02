@@ -260,7 +260,7 @@ you use the code or data in your research project.
 ```bibtex
 @inproceedings{pisces-socc22,
   title={Pisces: Efficient Federated Learning via Guided Asynchronous Training},
-  author={Zhifeng Jiang and Wei Wang and Baochun Li and Bo Li},
+  author={Jiang, Zhifeng and Wang, Wei and Li, Baochun and Li, Bo},
   booktitle={ACM Symposium on Cloud Computing (SoCC)},
   year={2022}
 }
