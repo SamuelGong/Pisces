@@ -1,6 +1,6 @@
 # Pisces
 
-This repository contains the evvaluation artifacts of our SoCC'22 paper
+This repository contains the evaluation artifacts of our SoCC'22 paper
 [Efficient Federated Learning via Guided Asynchronous Training](https://dl.acm.org/doi/10.1145/3542929.3563463).
 It is implemented by extending an early version of [Plato](https://github.com/TL-System/plato), a new scalable federated learning research framework.
 
