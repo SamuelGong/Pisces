@@ -1,7 +1,7 @@
 # Pisces
 
-This repository contains the evvaluation artifacts of our SoCC'22 paper
-[Efficient Federated Learning via Guided Asynchronous Training](http://home.cse.ust.hk/~zjiangaj/files/pisces-socc22.pdf).
+This repository contains the evaluation artifacts of our SoCC'22 paper
+[Efficient Federated Learning via Guided Asynchronous Training](https://dl.acm.org/doi/10.1145/3542929.3563463).
 It is implemented by extending an early version of [Plato](https://github.com/TL-System/plato), a new scalable federated learning research framework.
 
 ## 1. Overview
@@ -183,7 +183,7 @@ Cluster server deployed on pisces-worker-1 (3.145.144.92).
 ## 3. Running Experiments
 
 
-### 1. Configuring Tasks
+### 3.1 Configuring Tasks
 
 In the folder `[project folder]/experiments/exp_config_examples`, 
 you can find the configuration files for running the experiments
@@ -195,7 +195,7 @@ Of course, you can also try your own experiments
 by customizing the configuration files.
 The above-mentioned examples can serve as templates for you.
 
-### 2. Running a Particular Task
+### 3.2 Running a Particular Task
 
 Once you have prepared a legitimate configuration file for a task,
 you can put it in your created experiment folder and then use 
@@ -259,10 +259,15 @@ you use the code or data in your research project.
 
 ```bibtex
 @inproceedings{pisces-socc22,
+  author={Jiang, Zhifeng and Wang, Wei and Li, Baochun and Li, Bo},
   title={Pisces: Efficient Federated Learning via Guided Asynchronous Training},
-  author={Zhifeng Jiang and Wei Wang and Baochun Li and Bo Li},
-  booktitle={ACM Symposium on Cloud Computing (SoCC)},
-  year={2022}
+  year={2022},
+  isbn={9781450394147},
+  publisher={Association for Computing Machinery},
+  booktitle={Proceedings of the 13th Symposium on Cloud Computing},
+  url={https://doi.org/10.1145/3542929.3563463},
+  doi={10.1145/3542929.3563463},
+  pages={370–385},
 }
 ```
 
