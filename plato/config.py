@@ -130,10 +130,6 @@ class Config:
             # A run ID is unique to each client in an experiment
             Config.params['run_id'] = os.getpid()
 
-            # Pretrained models
-            Config.params['model_dir'] = "./models/pretrained/"
-            Config.params['pretrained_model_dir'] = "./models/pretrained/"
-
         return cls._instance
 
     @staticmethod

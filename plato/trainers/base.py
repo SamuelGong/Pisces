@@ -59,7 +59,7 @@ class Trainer(ABC):
     @staticmethod
     def save_accuracy(accuracy, filename=None):
         """Saving the test accuracy to a file."""
-        model_dir = Config().params['model_dir']
+        model_dir = Config().result_dir
         model_name = Config().trainer.model_name
 
         if not os.path.exists(model_dir):
@@ -76,7 +76,7 @@ class Trainer(ABC):
     @staticmethod
     def load_accuracy(filename=None):
         """Loading the test accuracy from a file."""
-        model_dir = Config().params['model_dir']
+        model_dir = Config().result_dir
         model_name = Config().trainer.model_name
 
         if filename is not None:
@@ -110,7 +110,7 @@ class Trainer(ABC):
                                   (self.client_id, ))
 
         model_name = Config().trainer.model_name
-        model_dir = Config().params['model_dir']
+        model_dir = Config().result_dir
         model_file = f"{model_dir}{model_name}_{self.client_id}_{Config().params['run_id']}.pth"
         accuracy_file = f"{model_dir}{model_name}_{self.client_id}_{Config().params['run_id']}.acc"
 
