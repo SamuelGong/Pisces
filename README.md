@@ -40,7 +40,7 @@ bash standalone_install.sh
 
 #### 2.1.2 Install and Configure AWS CLI
 
-One should have an **AWS account**. Also, at the coordinator node, 
+One should have an **AWS account**. Also, at your host machine, 
 one should have installed the latest **aws-cli** with credentials well configured (so that
 we can manipulate all the nodes in the cluster remotely via command line tools.).
 
@@ -89,11 +89,11 @@ vim ec2_node_template.yml
 # relevant key:
 #    BlockDeviceMappings/Ebs/VolumeSize: how large is the storage of each node
 #    KeyName: the path to the key file (relative to ~/.ssh/) you plan to use to 
-#            log into each node of the cluster from your coordinator node
+#            log into each node of the cluster from your host machine
 vim run.sh
 # relevant variable:
 #    LOCAL_PRIVATE_KEY: the path to the key file (should be absolute) you plan to use to 
-#                      log into each node of the cluster from your coordinator node
+#                      log into each node of the cluster from your host machine,
 #                      i.e., the same as the one you configure in ec2_node_template.yml
 
 # 2. cluster-related
