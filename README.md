@@ -271,5 +271,12 @@ you use the code or data in your research project.
 }
 ```
 
+
+## Recent activity [![Time period](https://images.repography.com/44587806/SamuelGong/Pisces/recent-activity/s26XHw9ymUI5vysAZyX7A4w2v4vtB1_Y0P8EZcvzXFo/NLc9IWkRWVbjaI99X5Vc5zySogI5BxaHIRCOnNCievs_badge.svg)](https://repography.com)
+[![Timeline graph](https://images.repography.com/44587806/SamuelGong/Pisces/recent-activity/s26XHw9ymUI5vysAZyX7A4w2v4vtB1_Y0P8EZcvzXFo/NLc9IWkRWVbjaI99X5Vc5zySogI5BxaHIRCOnNCievs_timeline.svg)](https://github.com/SamuelGong/Pisces/commits)
+[![Issue status graph](https://images.repography.com/44587806/SamuelGong/Pisces/recent-activity/s26XHw9ymUI5vysAZyX7A4w2v4vtB1_Y0P8EZcvzXFo/NLc9IWkRWVbjaI99X5Vc5zySogI5BxaHIRCOnNCievs_issues.svg)](https://github.com/SamuelGong/Pisces/issues)
+[![Pull request status graph](https://images.repography.com/44587806/SamuelGong/Pisces/recent-activity/s26XHw9ymUI5vysAZyX7A4w2v4vtB1_Y0P8EZcvzXFo/NLc9IWkRWVbjaI99X5Vc5zySogI5BxaHIRCOnNCievs_prs.svg)](https://github.com/SamuelGong/Pisces/pulls)
+[![Activity map](https://images.repography.com/44587806/SamuelGong/Pisces/recent-activity/s26XHw9ymUI5vysAZyX7A4w2v4vtB1_Y0P8EZcvzXFo/NLc9IWkRWVbjaI99X5Vc5zySogI5BxaHIRCOnNCievs_map.svg)](https://github.com/SamuelGong/Pisces/commits)
+
 ## Contact
 Zhifeng Jiang (zjiangaj@cse.ust.hk).
